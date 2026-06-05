@@ -31,22 +31,22 @@
   <div class="max-w-5xl mx-auto px-4 py-5">
     <div class="flex items-center justify-between gap-3 flex-wrap">
       <div>
-        <h1 class="text-2xl font-black tracking-tight flex items-center gap-2">🏃 체육대학 입시 상담</h1>
-        <p class="text-violet-100 text-[14px] mt-0.5">환산 총점 계산 · 학생 매칭 · 상담 기록 관리</p>
+        <h1 class="text-[26px] font-black tracking-tight flex items-center gap-2">🏃 체육대학 입시 상담</h1>
+        <p class="text-violet-100 text-[15px] mt-0.5">환산 총점 계산 · 학생 매칭 · 상담 기록 관리</p>
       </div>
       <div class="flex items-center gap-2">
-        <label class="text-[13px] font-black uppercase tracking-widest text-violet-200">학년도</label>
-        <select id="yearSel" class="bg-white/15 border border-white/30 rounded-xl px-3 py-2 text-sm font-bold text-white focus:outline-none focus:ring-2 focus:ring-white/50 backdrop-blur">
+        <label class="text-[14px] font-black uppercase tracking-widest text-violet-200">학년도</label>
+        <select id="yearSel" class="bg-white/15 border border-white/30 rounded-xl px-3 py-2 text-[15px] font-bold text-white focus:outline-none focus:ring-2 focus:ring-white/50 backdrop-blur">
         </select>
       </div>
     </div>
     <!-- Tabs -->
     <nav class="flex gap-1.5 mt-4 bg-white/10 p-1 rounded-2xl w-fit max-w-full overflow-x-auto custom-scrollbar">
-      <button data-tab="match" class="tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-sm font-bold transition">🔎 학생 매칭</button>
-      <button data-tab="calc"  class="tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-sm font-bold transition">🧮 전형 계산기</button>
-      <button data-tab="event" class="tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-sm font-bold transition">🏃 종목 역검색</button>
-      <button data-tab="jeonhyeong" class="tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-sm font-bold transition">📊 전형별 보기</button>
-      <button data-tab="records" class="tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-sm font-bold transition">📋 상담 기록</button>
+      <button data-tab="match" class="tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-[15px] font-bold transition">🔎 학생 매칭</button>
+      <button data-tab="calc"  class="tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-[15px] font-bold transition">🧮 전형 계산기</button>
+      <button data-tab="event" class="tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-[15px] font-bold transition">🏃 종목 역검색</button>
+      <button data-tab="jeonhyeong" class="tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-[15px] font-bold transition">📊 전형별 보기</button>
+      <button data-tab="records" class="tab-btn whitespace-nowrap px-4 py-2 rounded-xl text-[15px] font-bold transition">📋 상담 기록</button>
     </nav>
   </div>
 </header>
@@ -54,7 +54,7 @@
 <main class="max-w-5xl mx-auto px-4 py-6">
 
   <!-- 데이터 안내 배너 -->
-  <div class="no-print mb-5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 px-4 py-3 text-[14px] leading-relaxed">
+  <div class="no-print mb-5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 px-4 py-3 text-[15px] leading-relaxed">
     📊 <b>실제 데이터 기반</b> — 반영비율·영어 등급환산표·내신 배점표는 첨부 엑셀(2026·2027·2028 입시자료)에서 추출한 값입니다.
     <b>실기 기록→점수 환산표·합격선(컷)은 엑셀에 없어</b> 실기·서류·면접은 직접 입력(0~100), 합격선은 빈 필드로 비워둡니다.
     표시되는 <b>환산점수는 반영비율 기반 참고지수</b>이며, 만점·실기배점이 포함된 공식 총점이 아닙니다.
@@ -63,8 +63,8 @@
   <!-- ============ TAB: 학생 매칭 ============ -->
   <section id="tab-match" class="tab-pane space-y-5">
     <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6 fade-in">
-      <h2 class="text-lg font-black text-slate-900 flex items-center gap-2 mb-1">👤 학생 프로필</h2>
-      <p class="text-[13px] text-slate-500 mb-4">한 번 입력하면 매칭·계산·기록에 공통으로 쓰입니다.</p>
+      <h2 class="text-[20px] font-black text-slate-900 flex items-center gap-2 mb-1">👤 학생 프로필</h2>
+      <p class="text-[14px] text-slate-500 mb-4">한 번 입력하면 매칭·계산·기록에 공통으로 쓰입니다.</p>
       <div class="grid sm:grid-cols-3 gap-3 mb-4">
         <div>
           <label class="lbl">학생명</label>
@@ -80,7 +80,7 @@
         </div>
       </div>
       <div class="rounded-2xl bg-slate-50 border border-slate-100 p-4">
-        <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest mb-3">수능 성적</p>
+        <p class="text-[14px] font-black text-slate-500 uppercase tracking-widest mb-3">수능 성적</p>
         <div class="grid sm:grid-cols-4 gap-3 num-grid">
           <div><label class="lbl">국어 백분위</label><input id="p_kor_pct" type="number" min="0" max="100" class="inp" placeholder="0~100"></div>
           <div><label class="lbl">수학 백분위</label><input id="p_mat_pct" type="number" min="0" max="100" class="inp" placeholder="0~100"></div>
@@ -88,7 +88,7 @@
           <div><label class="lbl">영어 등급(1~9)</label><input id="p_eng" type="number" min="1" max="9" class="inp" placeholder="1~9"></div>
         </div>
         <details class="mt-3">
-          <summary class="text-[13px] text-violet-600 font-bold cursor-pointer">표준점수도 입력 (표준점수 반영 대학용, 선택)</summary>
+          <summary class="text-[14px] text-violet-600 font-bold cursor-pointer">표준점수도 입력 (표준점수 반영 대학용, 선택)</summary>
           <div class="grid sm:grid-cols-3 gap-3 num-grid mt-2">
             <div><label class="lbl">국어 표준점수</label><input id="p_kor_std" type="number" class="inp" placeholder="예: 131"></div>
             <div><label class="lbl">수학 표준점수</label><input id="p_mat_std" type="number" class="inp" placeholder="예: 137"></div>
@@ -106,18 +106,18 @@
     <div id="matchResultWrap" class="hidden fade-in">
       <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6">
         <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
-          <h2 class="text-lg font-black text-slate-900 flex items-center gap-2">🎯 매칭 결과 <span id="matchCount" class="text-[13px] font-bold text-violet-600 bg-violet-50 px-2.5 py-1 rounded-full"></span></h2>
+          <h2 class="text-[20px] font-black text-slate-900 flex items-center gap-2">🎯 매칭 결과 <span id="matchCount" class="text-[14px] font-bold text-violet-600 bg-violet-50 px-2.5 py-1 rounded-full"></span></h2>
           <div class="flex gap-2 flex-wrap">
             <select id="filterKind" class="inp-sm"><option value="">전형 전체</option><option value="정시">정시</option><option value="수시">수시</option></select>
             <select id="filterRegion" class="inp-sm"><option value="">지역 전체</option></select>
             <select id="sortBy" class="inp-sm"><option value="score">환산지수 높은순</option><option value="cap">모집인원 많은순</option></select>
           </div>
         </div>
-        <p class="text-[13px] text-slate-500 mb-3">환산지수 = 학생의 <b>수능·내신만</b> 반영비율로 환산한 0~100 참고지수입니다. 실기·면접 비중은 <b>커버리지</b>로 표시(미반영).</p>
+        <p class="text-[14px] text-slate-500 mb-3">환산지수 = 학생의 <b>수능·내신만</b> 반영비율로 환산한 0~100 참고지수입니다. 실기·면접 비중은 <b>커버리지</b>로 표시(미반영).</p>
         <div class="overflow-x-auto custom-scrollbar">
-          <table class="w-full text-sm min-w-[720px]">
+          <table class="w-full text-[15px] min-w-[720px]">
             <thead>
-              <tr class="text-slate-500 border-b border-slate-200 uppercase font-black text-[13px] tracking-wider">
+              <tr class="text-slate-500 border-b border-slate-200 uppercase font-black text-[14px] tracking-wider">
                 <th class="text-left py-2 px-2">대학 / 학과</th>
                 <th class="px-2">지역</th>
                 <th class="px-2">전형</th>
@@ -139,7 +139,7 @@
   <!-- ============ TAB: 전형 계산기 ============ -->
   <section id="tab-calc" class="tab-pane space-y-5 hidden">
     <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6 fade-in">
-      <h2 class="text-lg font-black text-slate-900 mb-4 flex items-center gap-2">🧮 대학 · 학과 · 전형 선택</h2>
+      <h2 class="text-[20px] font-black text-slate-900 mb-4 flex items-center gap-2">🧮 대학 · 학과 · 전형 선택</h2>
       <div class="grid sm:grid-cols-3 gap-3">
         <div><label class="lbl">대학</label><select id="selSchool" class="inp"></select></div>
         <div><label class="lbl">학과 / 모집단위</label><select id="selDept" class="inp"></select></div>
@@ -153,10 +153,10 @@
   <section id="tab-records" class="tab-pane space-y-5 hidden">
     <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6 fade-in">
       <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
-        <h2 class="text-lg font-black text-slate-900 flex items-center gap-2">📋 저장된 상담 기록</h2>
+        <h2 class="text-[20px] font-black text-slate-900 flex items-center gap-2">📋 저장된 상담 기록</h2>
         <div class="flex items-center gap-2">
-          <span id="fbStatus" class="text-[13px] font-bold px-2.5 py-1 rounded-full"></span>
-          <button id="btnReloadRecords" class="btn-ghost text-sm">↻ 새로고침</button>
+          <span id="fbStatus" class="text-[14px] font-bold px-2.5 py-1 rounded-full"></span>
+          <button id="btnReloadRecords" class="btn-ghost text-[15px]">↻ 새로고침</button>
         </div>
       </div>
       <div id="recordsList" class="space-y-2"></div>
@@ -167,8 +167,8 @@
   <!-- ============ TAB: 종목 역검색 ============ -->
   <section id="tab-event" class="tab-pane space-y-5 hidden">
     <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6 fade-in">
-      <h2 class="text-lg font-black text-slate-900 flex items-center gap-2 mb-1">🏃 실기 종목으로 대학 찾기</h2>
-      <p class="text-[13px] text-slate-500 mb-4">실기 종목을 고르면 그 종목을 실기에 반영하는 대학·학과·전형을 역으로 찾아줍니다. 종목 데이터는 엑셀에 기재된 전형만 대상입니다(주로 수시 실기/교과+실기).</p>
+      <h2 class="text-[20px] font-black text-slate-900 flex items-center gap-2 mb-1">🏃 실기 종목으로 대학 찾기</h2>
+      <p class="text-[14px] text-slate-500 mb-4">실기 종목을 고르면 그 종목을 실기에 반영하는 대학·학과·전형을 역으로 찾아줍니다. 종목 데이터는 엑셀에 기재된 전형만 대상입니다(주로 수시 실기/교과+실기).</p>
       <div class="grid sm:grid-cols-2 gap-3">
         <div><label class="lbl">실기 종목</label><select id="evSel" class="inp"></select></div>
         <div><label class="lbl">또는 종목명 검색</label><input id="evText" class="inp" placeholder="예: 제자리멀리뛰기, 배근력"></div>
@@ -176,12 +176,12 @@
     </div>
     <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6 fade-in">
       <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
-        <h2 class="text-base font-black text-slate-900">결과 <span id="evCount" class="text-[13px] font-bold text-violet-600 bg-violet-50 px-2.5 py-1 rounded-full"></span></h2>
-        <span class="text-[13px] text-slate-500" id="evHint"></span>
+        <h2 class="text-[17px] font-black text-slate-900">결과 <span id="evCount" class="text-[14px] font-bold text-violet-600 bg-violet-50 px-2.5 py-1 rounded-full"></span></h2>
+        <span class="text-[14px] text-slate-500" id="evHint"></span>
       </div>
       <div class="overflow-x-auto custom-scrollbar">
-        <table class="w-full text-sm min-w-[640px]">
-          <thead><tr class="text-slate-500 border-b border-slate-200 uppercase font-black text-[13px] tracking-wider">
+        <table class="w-full text-[15px] min-w-[640px]">
+          <thead><tr class="text-slate-500 border-b border-slate-200 uppercase font-black text-[14px] tracking-wider">
             <th class="text-left py-2 px-2">대학 / 학과</th><th class="px-2">지역</th><th class="px-2">전형</th><th class="px-2">반영비율</th><th class="text-left px-2">실기 종목(엑셀 원문)</th><th class="px-2">계산</th></tr></thead>
           <tbody id="evTbody"></tbody>
         </table>
@@ -192,8 +192,8 @@
   <!-- ============ TAB: 전형별 보기 ============ -->
   <section id="tab-jeonhyeong" class="tab-pane space-y-5 hidden">
     <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6 fade-in">
-      <h2 class="text-lg font-black text-slate-900 flex items-center gap-2 mb-1">📊 전형별 한눈에 보기</h2>
-      <p class="text-[13px] text-slate-500 mb-4">전형 유형을 고르면 해당 전형으로 모집하는 대학·학과를 한 화면에 모아 보여줍니다. 연도 선택과 연동되며, 모집인원은 엑셀 원본값입니다.</p>
+      <h2 class="text-[20px] font-black text-slate-900 flex items-center gap-2 mb-1">📊 전형별 한눈에 보기</h2>
+      <p class="text-[14px] text-slate-500 mb-4">전형 유형을 고르면 해당 전형으로 모집하는 대학·학과를 한 화면에 모아 보여줍니다. 연도 선택과 연동되며, 모집인원은 엑셀 원본값입니다.</p>
       <div class="grid sm:grid-cols-2 gap-3">
         <div><label class="lbl">전형 유형</label><select id="jhSel" class="inp"></select></div>
         <div><label class="lbl">지역</label><select id="jhRegion" class="inp"><option value="">지역 전체</option></select></div>
@@ -201,12 +201,12 @@
     </div>
     <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6 fade-in">
       <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
-        <h2 class="text-base font-black text-slate-900">모집 대학 <span id="jhCount" class="text-[13px] font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full"></span></h2>
-        <span class="text-[13px] text-slate-500" id="jhSum"></span>
+        <h2 class="text-[17px] font-black text-slate-900">모집 대학 <span id="jhCount" class="text-[14px] font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full"></span></h2>
+        <span class="text-[14px] text-slate-500" id="jhSum"></span>
       </div>
       <div class="overflow-x-auto custom-scrollbar">
-        <table class="w-full text-sm min-w-[560px]">
-          <thead><tr class="text-slate-500 border-b border-slate-200 uppercase font-black text-[13px] tracking-wider">
+        <table class="w-full text-[15px] min-w-[560px]">
+          <thead><tr class="text-slate-500 border-b border-slate-200 uppercase font-black text-[14px] tracking-wider">
             <th class="text-left py-2 px-2">대학 / 학과</th><th class="px-2">지역</th><th class="px-2">모집인원</th><th class="px-2">비고</th><th class="px-2">계산</th></tr></thead>
           <tbody id="jhTbody"></tbody>
         </table>
@@ -216,7 +216,7 @@
 
 </main>
 
-<footer class="no-print max-w-5xl mx-auto px-4 py-8 text-[13px] text-slate-500 leading-relaxed">
+<footer class="no-print max-w-5xl mx-auto px-4 py-8 text-[14px] text-slate-500 leading-relaxed">
   데이터 출처: 첨부 엑셀(2026·2027·2028 체육대학 입시자료) · 반영비율/영어환산표/내신배점표는 엑셀 원본값 그대로 사용.
   합격선·실기배점표는 엑셀에 없어 비워두었으며, 각 전형 객체의 <code>cutoff</code> 필드에 추후 입력 가능합니다.
 </footer>
@@ -289,16 +289,16 @@ let univs = () => APP_DATA[YEAR] || [];
 // Tailwind helper classes injected via style-less classnames (defined inline below)
 const _css = document.createElement('style');
 _css.textContent = `
- .lbl{display:block;font-size:13px;font-weight:700;color:#475569;letter-spacing:.01em;margin-bottom:5px}
- .inp{width:100%;padding:10px 12px;background:#fff;border:1px solid #e2e8f0;border-radius:12px;font-size:14px;color:#0f172a;font-family:inherit}
+ .lbl{display:block;font-size:14px;font-weight:700;color:#475569;letter-spacing:.01em;margin-bottom:5px}
+ .inp{width:100%;padding:11px 13px;background:#fff;border:1px solid #e2e8f0;border-radius:12px;font-size:15px;color:#0f172a;font-family:inherit}
  .inp:focus{outline:none;border-color:#7c3aed;box-shadow:0 0 0 3px rgba(124,58,237,.15)}
- .inp-sm{padding:7px 10px;background:#fff;border:1px solid #e2e8f0;border-radius:10px;font-size:13px;font-weight:600;color:#334155}
+ .inp-sm{padding:8px 11px;background:#fff;border:1px solid #e2e8f0;border-radius:10px;font-size:14px;font-weight:600;color:#334155}
  .inp-sm:focus{outline:none;border-color:#7c3aed}
- .btn-primary{background:linear-gradient(135deg,#7c3aed,#6366f1);color:#fff;font-weight:800;font-size:14px;padding:11px 20px;border-radius:14px;box-shadow:0 6px 16px -6px rgba(99,102,241,.6);border:none;cursor:pointer;transition:.15s}
+ .btn-primary{background:linear-gradient(135deg,#7c3aed,#6366f1);color:#fff;font-weight:800;font-size:15px;padding:11px 20px;border-radius:14px;box-shadow:0 6px 16px -6px rgba(99,102,241,.6);border:none;cursor:pointer;transition:.15s}
  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 10px 22px -8px rgba(99,102,241,.7)}
- .btn-ghost{background:#f1f5f9;color:#475569;font-weight:700;font-size:14px;padding:10px 16px;border-radius:14px;border:1px solid #e2e8f0;cursor:pointer}
+ .btn-ghost{background:#f1f5f9;color:#475569;font-weight:700;font-size:15px;padding:10px 16px;border-radius:14px;border:1px solid #e2e8f0;cursor:pointer}
  .btn-ghost:hover{background:#e2e8f0}
- .chip{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px;background:#f5f3ff;color:#6d28d9;border:1px solid #ddd6fe}
+ .chip{display:inline-flex;align-items:center;gap:5px;font-size:14px;font-weight:700;padding:4px 10px;border-radius:999px;background:#f5f3ff;color:#6d28d9;border:1px solid #ddd6fe}
  .tab-btn{color:#ddd6fe}
  .tab-btn.active{background:#fff;color:#6d28d9;box-shadow:0 2px 8px -2px rgba(0,0,0,.15)}
 `;
@@ -493,18 +493,18 @@ function renderEventSearch(key){
   // 중복 제거(같은 전형)
   const seen=new Set(); rows=rows.filter(r=>{const id=r.ui+'_'+r.di+'_'+r.ai; if(seen.has(id))return false; seen.add(id); return true;});
   $('evCount').textContent=rows.length+'건';
-  if(!key){ tb.innerHTML='<tr><td colspan="6" class="text-slate-500 py-3 px-2 text-sm">종목을 선택하거나 검색어를 입력하세요.</td></tr>'; return; }
-  if(!rows.length){ tb.innerHTML='<tr><td colspan="6" class="text-slate-500 py-3 px-2 text-sm">해당 종목을 반영하는 전형이 없습니다(이 연도 기준).</td></tr>'; return; }
+  if(!key){ tb.innerHTML='<tr><td colspan="6" class="text-slate-500 py-3 px-2 text-[15px]">종목을 선택하거나 검색어를 입력하세요.</td></tr>'; return; }
+  if(!rows.length){ tb.innerHTML='<tr><td colspan="6" class="text-slate-500 py-3 px-2 text-[15px]">해당 종목을 반영하는 전형이 없습니다(이 연도 기준).</td></tr>'; return; }
   tb.innerHTML='';
   rows.forEach(r=>{
     const tr=el('tr','border-b border-slate-100 hover:bg-violet-50/40 transition');
     tr.innerHTML=`
-      <td class="text-left py-2.5 px-2"><div class="font-bold text-slate-800">${r.school}</div><div class="text-[13px] text-slate-500">${r.dept}</div></td>
-      <td class="px-2 text-center text-[13px] text-slate-500">${r.region||'-'}</td>
-      <td class="px-2 text-center"><span class="text-[13px] font-bold px-2 py-0.5 rounded-full bg-violet-50 text-violet-600">${r.admName}</span></td>
-      <td class="px-2 text-center text-[13px]">${weightChips(r.adm)}</td>
-      <td class="px-2 text-left text-[13px] text-slate-600">${esc(r.raw)}</td>
-      <td class="px-2 text-center"><button class="text-[13px] font-bold text-violet-600 hover:underline" data-go>계산 ▸</button></td>`;
+      <td class="text-left py-2.5 px-2"><div class="font-bold text-slate-800">${r.school}</div><div class="text-[14px] text-slate-500">${r.dept}</div></td>
+      <td class="px-2 text-center text-[14px] text-slate-500">${r.region||'-'}</td>
+      <td class="px-2 text-center"><span class="text-[14px] font-bold px-2 py-0.5 rounded-full bg-violet-50 text-violet-600">${r.admName}</span></td>
+      <td class="px-2 text-center text-[14px]">${weightChips(r.adm)}</td>
+      <td class="px-2 text-left text-[14px] text-slate-600">${esc(r.raw)}</td>
+      <td class="px-2 text-center"><button class="text-[14px] font-bold text-violet-600 hover:underline" data-go>계산 ▸</button></td>`;
     tr.querySelector('[data-go]').onclick=()=>goCalc(r.ui,r.di,r.ai);
     tb.appendChild(tr);
   });
@@ -547,11 +547,11 @@ function renderJeonhyeong(){
   rows.forEach(r=>{
     const tr=el('tr','border-b border-slate-100 hover:bg-indigo-50/40 transition');
     tr.innerHTML=`
-      <td class="text-left py-2.5 px-2"><div class="font-bold text-slate-800">${r.school}</div><div class="text-[13px] text-slate-500">${r.dept}</div></td>
-      <td class="px-2 text-center text-[13px] text-slate-500">${r.region||'-'}</td>
+      <td class="text-left py-2.5 px-2"><div class="font-bold text-slate-800">${r.school}</div><div class="text-[14px] text-slate-500">${r.dept}</div></td>
+      <td class="px-2 text-center text-[14px] text-slate-500">${r.region||'-'}</td>
       <td class="px-2 text-center font-black text-indigo-700">${r.cap}명</td>
-      <td class="px-2 text-center text-[13px] text-slate-500">${r.bigo?esc(r.bigo):'-'}</td>
-      <td class="px-2 text-center">${r.ai>=0?`<button class="text-[13px] font-bold text-indigo-600 hover:underline" data-go>계산 ▸</button>`:'<span class="text-slate-300 text-[13px]">반영정보 없음</span>'}</td>`;
+      <td class="px-2 text-center text-[14px] text-slate-500">${r.bigo?esc(r.bigo):'-'}</td>
+      <td class="px-2 text-center">${r.ai>=0?`<button class="text-[14px] font-bold text-indigo-600 hover:underline" data-go>계산 ▸</button>`:'<span class="text-slate-300 text-[14px]">반영정보 없음</span>'}</td>`;
     const b=tr.querySelector('[data-go]'); if(b) b.onclick=()=>goCalc(r.ui,r.di,r.ai);
     tb.appendChild(tr);
   });
@@ -591,15 +591,15 @@ function renderMatch(){
     const covColor = r.coverage>=80?'text-emerald-600':r.coverage>=40?'text-amber-600':'text-rose-500';
     const tr=el('tr','border-b border-slate-100 hover:bg-violet-50/40 transition');
     tr.innerHTML=`
-      <td class="text-left py-2.5 px-2"><div class="font-bold text-slate-800">${r.school}</div><div class="text-[13px] text-slate-500">${r.dept}</div></td>
-      <td class="px-2 text-center text-[13px] text-slate-500">${r.region||'-'}</td>
-      <td class="px-2 text-center"><span class="text-[13px] font-bold px-2 py-0.5 rounded-full ${r.kind==='정시'?'bg-indigo-50 text-indigo-600':'bg-violet-50 text-violet-600'}">${r.admName}</span></td>
-      <td class="px-2 text-center text-[13px]">${weightChips(r.adm)}</td>
-      <td class="px-2 text-center"><span class="text-base font-black text-violet-700">${r.index}</span><span class="text-[13px] text-slate-500">/100</span></td>
+      <td class="text-left py-2.5 px-2"><div class="font-bold text-slate-800">${r.school}</div><div class="text-[14px] text-slate-500">${r.dept}</div></td>
+      <td class="px-2 text-center text-[14px] text-slate-500">${r.region||'-'}</td>
+      <td class="px-2 text-center"><span class="text-[14px] font-bold px-2 py-0.5 rounded-full ${r.kind==='정시'?'bg-indigo-50 text-indigo-600':'bg-violet-50 text-violet-600'}">${r.admName}</span></td>
+      <td class="px-2 text-center text-[14px]">${weightChips(r.adm)}</td>
+      <td class="px-2 text-center"><span class="text-[17px] font-black text-violet-700">${r.index}</span><span class="text-[14px] text-slate-500">/100</span></td>
       <td class="px-2 text-center font-bold ${covColor}">${r.coverage}%</td>
       <td class="px-2 text-center text-slate-600">${r.cap!=null?r.cap+'명':'-'}</td>
       <td class="px-2 text-center text-slate-300">${r.cutoff!=null?r.cutoff:'—'}</td>
-      <td class="px-2 text-center"><button class="text-[13px] font-bold text-violet-600 hover:underline" data-go='${r.ui},${r.di},${r.ai}'>계산 ▸</button></td>`;
+      <td class="px-2 text-center"><button class="text-[14px] font-bold text-violet-600 hover:underline" data-go='${r.ui},${r.di},${r.ai}'>계산 ▸</button></td>`;
     tr.querySelector('[data-go]').onclick=()=>{ goCalc(r.ui,r.di,r.ai); };
     tb.appendChild(tr);
   });
@@ -631,7 +631,7 @@ function initDept(){
 function initAdm(){
   const adms=curDept().admissions;
   if(!adms.length){ $('selAdm').innerHTML='<option>전형 정보 없음</option>'; $('admDetail').innerHTML=
-    `<div class="bg-white rounded-3xl border border-slate-200 p-6 text-slate-500 text-sm">이 학과는 엑셀에 반영방법 데이터가 없습니다(모집인원만 존재).</div>`; return; }
+    `<div class="bg-white rounded-3xl border border-slate-200 p-6 text-slate-500 text-[15px]">이 학과는 엑셀에 반영방법 데이터가 없습니다(모집인원만 존재).</div>`; return; }
   fillSel($('selAdm'), adms, a=>a.name);
   $('selAdm').onchange=renderAdmDetail; renderAdmDetail();
 }
@@ -642,13 +642,13 @@ function renderAdmDetail(){
   const info=el('div','bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6 fade-in');
   let capHtml='';
   if(d.capacities && Object.keys(d.capacities).length){
-    capHtml = '<div class="flex flex-wrap gap-1.5 mt-2">'+Object.entries(d.capacities).map(([k,v])=>`<span class="text-[13px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full">${k.replace('_',' ')} ${v}명</span>`).join('')+'</div>';
+    capHtml = '<div class="flex flex-wrap gap-1.5 mt-2">'+Object.entries(d.capacities).map(([k,v])=>`<span class="text-[14px] font-bold bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full">${k.replace('_',' ')} ${v}명</span>`).join('')+'</div>';
   }
   info.innerHTML=`
     <div class="flex items-start justify-between gap-3 flex-wrap">
       <div>
-        <h2 class="text-lg font-black text-slate-900">${curSchool().name} · ${d.name}</h2>
-        <div class="text-[14px] text-slate-500 mt-0.5">${a.name}${a.group?' ('+a.group+'군)':''}</div>
+        <h2 class="text-[20px] font-black text-slate-900">${curSchool().name} · ${d.name}</h2>
+        <div class="text-[15px] text-slate-500 mt-0.5">${a.name}${a.group?' ('+a.group+'군)':''}</div>
       </div>
       <span class="chip">합격선(컷) <b>미입력</b></span>
     </div>
@@ -656,9 +656,9 @@ function renderAdmDetail(){
     ${capHtml}
     ${a.suneung?suneungInfoHtml(a):''}
     ${a.naesin?naesinInfoHtml(a):''}
-    ${a.suneungMin?`<div class="mt-3 text-[13px] text-slate-600 bg-amber-50 border border-amber-100 rounded-xl px-3 py-2">📋 <b>수능최저:</b> ${esc(a.suneungMin)}</div>`:''}
-    ${a.silgiEvents?`<div class="mt-2 text-[13px] text-slate-600 bg-slate-50 border border-slate-100 rounded-xl px-3 py-2">🏃 <b>실기 종목:</b> ${esc(a.silgiEvents)} <span class="text-slate-500">(기록→점수 환산표는 엑셀 미수록 → 수기 입력)</span></div>`:''}
-    ${a.bigo?`<div class="mt-2 text-[13px] text-slate-500">비고: ${esc(a.bigo)}</div>`:''}`;
+    ${a.suneungMin?`<div class="mt-3 text-[14px] text-slate-600 bg-amber-50 border border-amber-100 rounded-xl px-3 py-2">📋 <b>수능최저:</b> ${esc(a.suneungMin)}</div>`:''}
+    ${a.silgiEvents?`<div class="mt-2 text-[14px] text-slate-600 bg-slate-50 border border-slate-100 rounded-xl px-3 py-2">🏃 <b>실기 종목:</b> ${esc(a.silgiEvents)} <span class="text-slate-500">(기록→점수 환산표는 엑셀 미수록 → 수기 입력)</span></div>`:''}
+    ${a.bigo?`<div class="mt-2 text-[14px] text-slate-500">비고: ${esc(a.bigo)}</div>`:''}`;
   host.appendChild(info);
 
   // 수동 입력 카드 (실기/서류/면접 등)
@@ -667,7 +667,7 @@ function renderAdmDetail(){
   if(manualComps.length){
     const mc=el('div','bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6 fade-in');
     mc.innerHTML=`<h3 class="font-black text-slate-800 mb-1">✍️ 직접 입력 항목</h3>
-      <p class="text-[13px] text-slate-500 mb-3">엑셀에 환산표가 없는 영역입니다. 0~100 환산율로 입력하세요(예: 실기 만점 대비 %).</p>
+      <p class="text-[14px] text-slate-500 mb-3">엑셀에 환산표가 없는 영역입니다. 0~100 환산율로 입력하세요(예: 실기 만점 대비 %).</p>
       <div class="grid sm:grid-cols-3 gap-3">${manualComps.map(c=>
         `<div><label class="lbl">${c.label} 환산(0~100) · 반영 ${c.weight}%</label><input class="inp manual-in" data-key="${c.key}" type="number" min="0" max="100" placeholder="0~100"></div>`).join('')}</div>`;
     host.appendChild(mc);
@@ -698,14 +698,14 @@ function suneungInfoHtml(a){
   const su=a.suneung;
   const subj=Object.entries(su.subjectReflect).map(([k,v])=>{
     let t = v.mode==='fixed'?v.val+'%' : v.mode==='choose'?'택1 '+v.opts.map(o=>o+'%').join('/') : v.mode==='deduct'?'감점' : v.val;
-    return `<span class="text-[13px]"><b>${k}</b> ${t}</span>`;
+    return `<span class="text-[14px]"><b>${k}</b> ${t}</span>`;
   }).join(' · ');
   const eng=su.englishTable.map((v,i)=>`<td class="px-1.5 py-1 text-center ${i===0?'':'border-l border-slate-100'}">${v==null?'-':v}</td>`).join('');
   return `<div class="mt-3 rounded-2xl bg-slate-50 border border-slate-100 p-3">
-    <div class="text-[13px] font-black text-slate-500 uppercase tracking-wider mb-1">수능 반영 · 지표 ${su.indicator||''} · 탐구 ${su.tamguCount||'-'}과목${su.hangukSa?' · 한국사 '+esc(su.hangukSa):''}</div>
+    <div class="text-[14px] font-black text-slate-500 uppercase tracking-wider mb-1">수능 반영 · 지표 ${su.indicator||''} · 탐구 ${su.tamguCount||'-'}과목${su.hangukSa?' · 한국사 '+esc(su.hangukSa):''}</div>
     <div class="text-slate-700 mb-2">${subj}</div>
-    <details><summary class="text-[13px] text-violet-600 font-bold cursor-pointer">영어 등급별 환산점수</summary>
-      <table class="text-[13px] mt-1 w-full"><tr class="text-slate-500">${[1,2,3,4,5,6,7,8,9].map(g=>`<td class="px-1.5 text-center">${g}등급</td>`).join('')}</tr><tr class="text-slate-700 font-bold">${eng}</tr></table></details>
+    <details><summary class="text-[14px] text-violet-600 font-bold cursor-pointer">영어 등급별 환산점수</summary>
+      <table class="text-[14px] mt-1 w-full"><tr class="text-slate-500">${[1,2,3,4,5,6,7,8,9].map(g=>`<td class="px-1.5 text-center">${g}등급</td>`).join('')}</tr><tr class="text-slate-700 font-bold">${eng}</tr></table></details>
   </div>`;
 }
 function naesinInfoHtml(a){
@@ -714,11 +714,11 @@ function naesinInfoHtml(a){
   const jae=n.jaehak&&n.jaehak.some(x=>x!=null)?`<tr class="text-slate-500">${[1,2,3,4,5].map(head).join('')}</tr><tr class="text-slate-700 font-bold">${n.jaehak.map(v=>`<td class="px-1.5 text-center">${v==null?'-':v}</td>`).join('')}</tr>`:'';
   const jol=n.jol&&n.jol.some(x=>x!=null)?`<tr class="text-slate-500">${[1,2,3,4,5,6,7,8,9].map(head).join('')}</tr><tr class="text-slate-700 font-bold">${n.jol.map(v=>`<td class="px-1.5 text-center">${v==null?'-':v}</td>`).join('')}</tr>`:'';
   return `<div class="mt-3 rounded-2xl bg-slate-50 border border-slate-100 p-3">
-    <div class="text-[13px] font-black text-slate-500 uppercase tracking-wider mb-1">내신 반영 · 반영교과 ${esc(n.banyeongGwa||'-')} · 지표 ${esc(n.jipyo||'-')}</div>
-    ${n.method?`<div class="text-[13px] text-slate-500 mb-2">${esc(n.method)}</div>`:''}
-    <details><summary class="text-[13px] text-violet-600 font-bold cursor-pointer">등급별 배점표</summary>
-      ${jae?'<div class="text-[13px] text-slate-500 mt-1">재학생</div><table class="text-[13px] w-full">'+jae+'</table>':''}
-      ${jol?'<div class="text-[13px] text-slate-500 mt-1">졸업생</div><table class="text-[13px] w-full">'+jol+'</table>':''}
+    <div class="text-[14px] font-black text-slate-500 uppercase tracking-wider mb-1">내신 반영 · 반영교과 ${esc(n.banyeongGwa||'-')} · 지표 ${esc(n.jipyo||'-')}</div>
+    ${n.method?`<div class="text-[14px] text-slate-500 mb-2">${esc(n.method)}</div>`:''}
+    <details><summary class="text-[14px] text-violet-600 font-bold cursor-pointer">등급별 배점표</summary>
+      ${jae?'<div class="text-[14px] text-slate-500 mt-1">재학생</div><table class="text-[14px] w-full">'+jae+'</table>':''}
+      ${jol?'<div class="text-[14px] text-slate-500 mt-1">졸업생</div><table class="text-[14px] w-full">'+jol+'</table>':''}
     </details></div>`;
 }
 function bindManual(){ document.querySelectorAll('.manual-in').forEach(i=>i.oninput=recalcCalc); }
@@ -729,26 +729,26 @@ function recalcCalc(){
   window.__lastCalc={total:r, school:curSchool().name, dept:curDept().name, admName:a.name};
   const rows=r.breakdown.map(b=>`
     <tr class="border-b border-white/15">
-      <td class="py-2 text-left font-bold">${b.label} <span class="text-white/85 text-[13px]">${b.weight}%</span>${b.note?` <span class="text-[13px] text-amber-200">${b.note}</span>`:''}</td>
+      <td class="py-2 text-left font-bold">${b.label} <span class="text-white/85 text-[14px]">${b.weight}%</span>${b.note?` <span class="text-[14px] text-amber-200">${b.note}</span>`:''}</td>
       <td class="py-2 text-center">${b.pct!=null?b.pct.toFixed(1):'<span class="text-white/50">미입력</span>'}</td>
       <td class="py-2 text-right font-black">${b.pct!=null?b.contrib.toFixed(2):'-'}</td>
     </tr>`).join('');
   const res = $('resultCard');
   res.innerHTML=`
     <div class="flex items-center justify-between flex-wrap gap-2">
-      <h2 class="text-base font-black">🎯 환산 총점 (참고지수)</h2>
-      <span class="text-[13px] font-bold bg-white/20 px-2.5 py-1 rounded-full">커버리지 ${r.coverage}%</span>
+      <h2 class="text-[17px] font-black">🎯 환산 총점 (참고지수)</h2>
+      <span class="text-[14px] font-bold bg-white/20 px-2.5 py-1 rounded-full">커버리지 ${r.coverage}%</span>
     </div>
     <div class="flex items-end gap-2 mt-2">
-      <span class="text-5xl font-black tabular-nums">${r.totalPct.toFixed(2)}</span>
+      <span class="text-[52px] font-black tabular-nums">${r.totalPct.toFixed(2)}</span>
       <span class="text-white/90 mb-1">/ 100</span>
-      <span class="text-white/85 text-sm mb-1 ml-2">(${r.total1000.toFixed(1)} / 1000)</span>
+      <span class="text-white/85 text-[15px] mb-1 ml-2">(${r.total1000.toFixed(1)} / 1000)</span>
     </div>
-    <table class="w-full text-sm mt-4 bg-white/10 rounded-xl overflow-hidden">
-      <thead><tr class="text-white/90 text-[13px] uppercase tracking-wider border-b border-white/20"><th class="text-left py-1.5 px-1">영역(반영%)</th><th>환산(0~100)</th><th class="text-right px-1">기여점수</th></tr></thead>
+    <table class="w-full text-[15px] mt-4 bg-white/10 rounded-xl overflow-hidden">
+      <thead><tr class="text-white/90 text-[14px] uppercase tracking-wider border-b border-white/20"><th class="text-left py-1.5 px-1">영역(반영%)</th><th>환산(0~100)</th><th class="text-right px-1">기여점수</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>
-    <p class="text-[13px] text-white/90 mt-3">※ 총점 = Σ(영역 환산 × 반영비율). 커버리지 100% 미만은 실기·면접 등 미입력 영역 존재. 합격선 데이터 없음.</p>`;
+    <p class="text-[14px] text-white/90 mt-3">※ 총점 = Σ(영역 환산 × 반영비율). 커버리지 100% 미만은 실기·면접 등 미입력 영역 존재. 합격선 데이터 없음.</p>`;
 }
 
 /* ===== 선택 바구니(여러 전형 담아 한 학생 기록) ===== */
@@ -764,7 +764,7 @@ function addToBasket(){
 function renderBasket(){
   const host=$('selBasket'); if(!host) return;
   host.innerHTML = basket.length? basket.map((b,i)=>`<span class="chip">${b.school} ${b.dept} · ${b.admName} (${b.total.toFixed(1)}) <button data-rm="${i}" class="text-rose-400 font-black ml-1">×</button></span>`).join('')
-    : '<span class="text-[13px] text-slate-500">담은 전형이 없습니다. ‘이 전형 담기’로 추가하세요.</span>';
+    : '<span class="text-[14px] text-slate-500">담은 전형이 없습니다. ‘이 전형 담기’로 추가하세요.</span>';
   host.querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>{ basket.splice(+b.dataset.rm,1); renderBasket(); });
 }
 async function doSaveConsultation(){
@@ -786,17 +786,17 @@ async function doSaveConsultation(){
    =================================================================== */
 async function refreshRecords(){
   $('fbStatus').textContent = FB_READY?'🟢 Firestore 연동':'🟡 로컬 저장(브라우저)';
-  $('fbStatus').className='text-[13px] font-bold px-2.5 py-1 rounded-full '+(FB_READY?'bg-emerald-50 text-emerald-600':'bg-amber-50 text-amber-600');
+  $('fbStatus').className='text-[14px] font-bold px-2.5 py-1 rounded-full '+(FB_READY?'bg-emerald-50 text-emerald-600':'bg-amber-50 text-amber-600');
   const arr=await loadConsultations();
   const host=$('recordsList');
-  if(!arr.length){ host.innerHTML='<div class="text-slate-500 text-sm py-4">저장된 상담 기록이 없습니다.</div>'; $('recordReport').innerHTML=''; return; }
+  if(!arr.length){ host.innerHTML='<div class="text-slate-500 text-[15px] py-4">저장된 상담 기록이 없습니다.</div>'; $('recordReport').innerHTML=''; return; }
   host.innerHTML='';
   arr.forEach(r=>{
     const d=new Date(r.date); const ds=isNaN(d)?'':`${d.getFullYear()}.${(d.getMonth()+1+'').padStart(2,'0')}.${(d.getDate()+'').padStart(2,'0')}`;
     const row=el('div','flex items-center justify-between gap-3 p-3 rounded-2xl border border-slate-100 hover:bg-violet-50/40 transition');
-    row.innerHTML=`<div><div class="font-bold text-slate-800">${esc(r.studentName||'(이름없음)')} <span class="text-[13px] text-slate-500 font-normal">· ${r.year}학년도 · ${r.selected?r.selected.length:0}개 전형</span></div>
-        <div class="text-[13px] text-slate-500">${ds} ${r.memo?'· '+esc(r.memo):''}</div></div>
-      <div class="flex gap-1.5"><button class="btn-ghost text-[14px] py-1.5 px-3" data-view>보고서</button><button class="text-rose-400 text-[14px] font-bold px-2" data-del>삭제</button></div>`;
+    row.innerHTML=`<div><div class="font-bold text-slate-800">${esc(r.studentName||'(이름없음)')} <span class="text-[14px] text-slate-500 font-normal">· ${r.year}학년도 · ${r.selected?r.selected.length:0}개 전형</span></div>
+        <div class="text-[14px] text-slate-500">${ds} ${r.memo?'· '+esc(r.memo):''}</div></div>
+      <div class="flex gap-1.5"><button class="btn-ghost text-[15px] py-1.5 px-3" data-view>보고서</button><button class="text-rose-400 text-[15px] font-bold px-2" data-del>삭제</button></div>`;
     row.querySelector('[data-view]').onclick=()=>renderReport(r);
     row.querySelector('[data-del]').onclick=async()=>{ if(confirm('삭제할까요?')){ await deleteConsultation(r.id); refreshRecords(); } };
     host.appendChild(row);
@@ -806,33 +806,33 @@ function renderReport(r){
   const d=new Date(r.date); const ds=isNaN(d)?'':`${d.getFullYear()}.${(d.getMonth()+1+'').padStart(2,'0')}.${(d.getDate()+'').padStart(2,'0')}`;
   const pf=r.profile||{};
   const pctStr=pf.pct?`국 ${pf.pct['국어']??'-'} / 수 ${pf.pct['수학']??'-'} / 탐 ${pf.pct['탐구']??'-'} / 영 ${pf.eng??'-'}등급`:'-';
-  const recRows=(r.recommendations||[]).map((x,i)=>`<tr class="border-b border-slate-100"><td class="py-1.5 px-2 text-slate-500">${i+1}</td><td class="px-2 font-bold">${esc(x.school)} ${esc(x.dept)}</td><td class="px-2 text-[13px]">${esc(x.adm)}</td><td class="px-2 text-center font-black text-violet-700">${x.index}</td><td class="px-2 text-center text-slate-500">${x.coverage}%</td></tr>`).join('');
+  const recRows=(r.recommendations||[]).map((x,i)=>`<tr class="border-b border-slate-100"><td class="py-1.5 px-2 text-slate-500">${i+1}</td><td class="px-2 font-bold">${esc(x.school)} ${esc(x.dept)}</td><td class="px-2 text-[14px]">${esc(x.adm)}</td><td class="px-2 text-center font-black text-violet-700">${x.index}</td><td class="px-2 text-center text-slate-500">${x.coverage}%</td></tr>`).join('');
   const selBlocks=(r.selected||[]).map(s=>{
-    const bd=(s.breakdown||[]).map(b=>`<tr class="border-b border-slate-100"><td class="py-1 px-2">${b.label} <span class="text-slate-500 text-[13px]">${b.weight}%</span></td><td class="px-2 text-center">${b.pct!=null?(+b.pct).toFixed(1):'-'}</td><td class="px-2 text-right font-bold">${b.pct!=null?(+b.contrib).toFixed(2):'-'}</td></tr>`).join('');
+    const bd=(s.breakdown||[]).map(b=>`<tr class="border-b border-slate-100"><td class="py-1 px-2">${b.label} <span class="text-slate-500 text-[14px]">${b.weight}%</span></td><td class="px-2 text-center">${b.pct!=null?(+b.pct).toFixed(1):'-'}</td><td class="px-2 text-right font-bold">${b.pct!=null?(+b.contrib).toFixed(2):'-'}</td></tr>`).join('');
     return `<div class="mt-3 rounded-2xl border border-slate-200 p-3 print-card">
-      <div class="flex justify-between items-center"><div class="font-black text-slate-800">${esc(s.school)} · ${esc(s.dept)} <span class="text-[13px] text-slate-500 font-normal">${esc(s.admName)}</span></div>
-        <div class="text-right"><span class="text-xl font-black text-violet-700">${(+s.total).toFixed(2)}</span><span class="text-[13px] text-slate-500">/100 · 커버 ${s.coverage}%</span></div></div>
-      <table class="w-full text-sm mt-2"><thead><tr class="text-slate-500 text-[13px] uppercase"><th class="text-left px-2">영역</th><th>환산</th><th class="text-right px-2">기여</th></tr></thead><tbody>${bd}</tbody></table></div>`;
-  }).join('') || '<div class="text-slate-500 text-sm mt-2">선택(담은) 전형이 없습니다.</div>';
+      <div class="flex justify-between items-center"><div class="font-black text-slate-800">${esc(s.school)} · ${esc(s.dept)} <span class="text-[14px] text-slate-500 font-normal">${esc(s.admName)}</span></div>
+        <div class="text-right"><span class="text-[22px] font-black text-violet-700">${(+s.total).toFixed(2)}</span><span class="text-[14px] text-slate-500">/100 · 커버 ${s.coverage}%</span></div></div>
+      <table class="w-full text-[15px] mt-2"><thead><tr class="text-slate-500 text-[14px] uppercase"><th class="text-left px-2">영역</th><th>환산</th><th class="text-right px-2">기여</th></tr></thead><tbody>${bd}</tbody></table></div>`;
+  }).join('') || '<div class="text-slate-500 text-[15px] mt-2">선택(담은) 전형이 없습니다.</div>';
 
   $('recordReport').innerHTML=`
     <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-7 fade-in print-card">
       <div class="flex items-start justify-between flex-wrap gap-2 border-b border-slate-100 pb-3 mb-3">
-        <div><h2 class="text-xl font-black text-slate-900">🏃 체육대학 입시 상담 보고서</h2>
-          <div class="text-[14px] text-slate-500 mt-1">${esc(r.studentName||'')} · ${r.year}학년도 · ${ds}</div></div>
+        <div><h2 class="text-[22px] font-black text-slate-900">🏃 체육대학 입시 상담 보고서</h2>
+          <div class="text-[15px] text-slate-500 mt-1">${esc(r.studentName||'')} · ${r.year}학년도 · ${ds}</div></div>
         <button onclick="window.print()" class="btn-primary no-print">🖨 인쇄 / PDF</button>
       </div>
-      <div class="grid sm:grid-cols-2 gap-2 text-[14px] mb-4">
+      <div class="grid sm:grid-cols-2 gap-2 text-[15px] mb-4">
         <div class="bg-slate-50 rounded-xl px-3 py-2">성별: <b>${r.gender==='F'?'여':'남'}</b></div>
         <div class="bg-slate-50 rounded-xl px-3 py-2">내신 평균: <b>${pf.naesinAvg??'-'}등급</b></div>
         <div class="bg-slate-50 rounded-xl px-3 py-2 sm:col-span-2">수능: <b>${pctStr}</b></div>
         ${r.memo?`<div class="bg-amber-50 rounded-xl px-3 py-2 sm:col-span-2">메모: ${esc(r.memo)}</div>`:''}
       </div>
       <h3 class="font-black text-slate-700 mb-1">추천 대학 (환산지수 상위)</h3>
-      <table class="w-full text-sm mb-2"><thead><tr class="text-slate-500 text-[13px] uppercase border-b border-slate-200"><th class="px-2">#</th><th class="text-left px-2">대학/학과</th><th class="text-left px-2">전형</th><th>지수</th><th>커버</th></tr></thead><tbody>${recRows||'<tr><td class="text-slate-500 py-2 px-2" colspan="5">없음</td></tr>'}</tbody></table>
+      <table class="w-full text-[15px] mb-2"><thead><tr class="text-slate-500 text-[14px] uppercase border-b border-slate-200"><th class="px-2">#</th><th class="text-left px-2">대학/학과</th><th class="text-left px-2">전형</th><th>지수</th><th>커버</th></tr></thead><tbody>${recRows||'<tr><td class="text-slate-500 py-2 px-2" colspan="5">없음</td></tr>'}</tbody></table>
       <h3 class="font-black text-slate-700 mt-4 mb-1">선택 전형 환산 상세</h3>
       ${selBlocks}
-      <p class="text-[13px] text-slate-500 mt-4">※ 환산점수는 엑셀 반영비율 기반 참고지수입니다. 실기·면접·합격선 미반영 가능. 공식 모집요강으로 최종 확인 필요.</p>
+      <p class="text-[14px] text-slate-500 mt-4">※ 환산점수는 엑셀 반영비율 기반 참고지수입니다. 실기·면접·합격선 미반영 가능. 공식 모집요강으로 최종 확인 필요.</p>
     </div>`;
   $('recordReport').scrollIntoView({behavior:'smooth'});
 }
